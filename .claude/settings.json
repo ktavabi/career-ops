@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ccd_session__mark_chapter",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "WebFetch",
+      "Bash(mkdir -p *)",
+      "Bash(node merge-tracker.mjs)",
+      "Bash(node verify-pipeline.mjs)",
+      "Bash(node update-system.mjs check)"
+    ]
+  }
+}
