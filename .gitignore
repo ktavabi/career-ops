@@ -41,3 +41,6 @@ package-lock.json
 # MemPalace per-project files (issue #185)
 mempalace.yaml
 entities.json
+
+# Superpowers brainstorm sessions
+.superpowers/
