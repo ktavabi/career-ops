@@ -10,7 +10,7 @@
    - US/Canada → `letter`
    - Rest of the world → `a4`
 6. Detect role archetype → adapt framing
-7. Rewrite Professional Summary by injecting JD keywords + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [JD domain].")
+7. Rewrite Professional Summary by injecting JD keywords + exit narrative bridge from `config/profile.yml` (truth-only; do not use unrelated boilerplate)
 8. Select top 3-4 most relevant projects for the job
 9. Reorder experience bullets by JD relevance
 10. Build competency grid from JD requirements (6-8 keyword phrases)
@@ -20,6 +20,17 @@
 14. Write HTML to `/tmp/cv-{candidate}-{company}.html`
 15. Execute: `node generate-pdf.mjs /tmp/cv-{candidate}-{company}.html output/cv-{candidate}-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
 16. Report: PDF path, number of pages, keyword coverage %
+
+## Master CV section handling (`cv.md`)
+
+The master CV is example-shaped and deeper than a 1-page ATS resume. When generating PDFs:
+
+1. **Always use:** Professional Summary (rewrite), Skills (competency grid + skills footer), Work Experience bullets (reorder/trim by JD relevance), Projects (top 3–4), Education.
+2. **Include when relevant:** Certifications (top 2–4 matching JD stack); Awards (only if JD values research/academic credentials).
+3. **Master-only by default (omit from PDF):** Publications, Grant Funding, Open Source.
+4. **Exception:** If the JD clearly emphasizes research publications, academic credentials, or open-source contribution, sample **1–3** lines from Publications and/or Open Source. Do not dump the full lists into the PDF.
+5. **Never invent** metrics or employers. Only reword existing bullets with JD vocabulary.
+6. Experience bullets are already MECE — select and reorder; do not re-derive content from deleted KEY METRICS blocks.
 
 ## ATS Rules (clean parsing)
 

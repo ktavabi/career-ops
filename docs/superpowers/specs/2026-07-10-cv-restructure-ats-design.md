@@ -6,10 +6,10 @@
 
 ## Goals
 
-1. Make `cv.md` the long master CV in example-shaped format (summary + bullets + projects + skills), deeper than a 1-page ATS resume.
+1. Make `cv.md` the long master academic style CV in example-shaped format (summary + bullets + projects + skills), deeper than a 1-page ATS resume.
 2. Preserve work-history detail via MECE mapping (each fact in exactly one home; nothing important lost).
 3. Keep ATS output as PDF-only through existing `modes/pdf.md` + `generate-pdf.mjs` (no intermediate tailored markdown CVs).
-4. Consolidate Publications, Funding, Open Source, and Skills as master-only sections spanning all roles.
+4. Consolidate Publications, Funding, Projects, Open Source, and Skills as master-only sections spanning all roles.
 
 ## Non-goals
 
@@ -28,11 +28,11 @@
 2. Professional Summary — 4–6 lines; DS/ML/BI Manager framing; hero metrics retained
 3. Skills — one consolidated section (categories such as ML/AI, Analytics/BI, Infra, Languages)
 4. Work Experience — WADOC → UW I-LABS → CHOP; each role: company, location, title, dates, **5–8 metric-rich bullets**
-5. Projects — 3–5 flagship items (e.g. NLP classifier, OOC pipeline, MNE-BIDS, key research predictors)
 6. Education — unchanged content, example formatting
 7. Publications — consolidated master-only (full list below + agency white papers)
 8. Funding — consolidated master-only across roles
-9. Open Source — consolidated master-only (e.g. MNE-BIDS)
+9. Projects — 3–5 flagship items (e.g. NLP classifier, OOC pipeline, MNE-BIDS, key research predictors)
+10. Open Source — consolidated master-only (e.g. MNE-BIDS)
 
 **Removed wrappers:** `#### EXECUTIVE SUMMARY`, `#### KEY METRICS`, `#### ACCOMPLISHMENTS`, per-role `#### TECHNICAL SKILLS DEMONSTRATED`, per-role publications/funding subsections.
 
