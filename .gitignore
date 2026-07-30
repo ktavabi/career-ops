@@ -37,6 +37,7 @@ bun.lock
 .claude/memory/
 career-dashboard
 package-lock.json
+.claude/worktrees/
 
 # MemPalace per-project files (issue #185)
 mempalace.yaml
@@ -44,3 +45,6 @@ entities.json
 
 # Superpowers brainstorm sessions
 .superpowers/
+
+# direnv
+.direnv/

@@ -12,6 +12,14 @@
 
       inputs.nixpkgs = nixpkgs;
 
+      # Default flakelight systems are Linux-only; include Darwin for macOS dev.
+      systems = [
+        "aarch64-darwin"
+        "x86_64-darwin"
+        "aarch64-linux"
+        "x86_64-linux"
+      ];
+
       devShell.packages =
         pkgs: with pkgs; [
 
