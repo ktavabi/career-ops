@@ -18,10 +18,11 @@ Data Scientist with 15+ years translating research-grade ML into production syst
 **Manager, Business Intelligence and Operations Surveillance (BIOS)** | Research and Data Analytics Division
 May 2023 – Present
 
-- Lead 5-analyst team across 5 Agile value areas, delivering 20+ Power BI dashboards, ML prototypes, and applied research for Prisons, Health Services, Reentry, Security, and executive leadership; partner with Recidiviz and CSG Justice Center on policy analytics
-- Own a production multi-label NLP classifier for correctional-facility incident narratives: 73 labels across 110,928 training records, achieving 76% micro-averaged F1, 88% precision, and 30x improvement over random baseline on 27,700 held-out incidents (scikit-learn TF-IDF with a multi-output one-vs-rest logistic-regression model), deployed with human-in-the-loop review
-- Ship 20+ Power BI dashboards and automated daily-to-annual reports (reception, dynamic risk-and-needs assessment, drug and alcohol screening, custody staffing, recidivism, behavioral misconduct, security-threat assessment, restrictive housing, and fentanyl task force) via SQL ETL, semantic models, and gateway refresh; led a SAS-to-SQL migration that eliminated recurring manual analyst intervention
-- Built end-to-end Python analytics pipeline on 123,291 transport records (2019–2025, 39 counties): data-quality profiling, county-cooperation KPI scoring (0–100), and NetworkX transport-flow maps; resolved apparent 45% key-variable missing data to 0.8% structural gap via chi-square and Cramer's V (V = 0.859)
+- Lead 5-analyst team across 5 Agile value areas (63 features delivered), shipping 20+ Power BI dashboards, ML prototypes, and applied research for Prisons, Health Services, Reentry, Security, and executive leadership; partner with Recidiviz and CSG Justice Center on policy analytics
+- Own a production multi-label NLP classifier for correctional-facility incident narratives: 73 labels across 110,928 training records from a 24-table relational export; scikit-learn TF-IDF with MultiOutputClassifier one-vs-rest logistic regression (ongoing SVM experimentation, ~+5 F1); k-fold cross-validation with Jaccard scoring on 27,700 held-out incidents — 75.6% micro-F1, 88.3% precision, 66.1% recall, 60.8% micro-Jaccard, 60.6% exact match (~30x vs. random baseline); deployed with human-in-the-loop review
+- Ship 20+ Power BI dashboards and automated daily-to-annual reports (reception, dynamic risk-and-needs assessment, drug and alcohol screening, custody staffing, recidivism, behavioral misconduct, security-threat assessment, restrictive housing, and fentanyl task force) via SQL ETL (T-SQL, Oracle), DAX semantic models, Power Automate, and gateway refresh; led a SAS-to-SQL migration and gateway automation that cut reporting cycle time roughly 60–70%
+- Built end-to-end Python analytics pipeline on 123,291 transport records (2019–2025, 39 counties): 10 source tables to a 32-field analytic model, county-cooperation KPI scoring (0–100), NetworkX transport-flow maps, and automated flagging of 4,107 high-complexity dual-mismatch individuals; resolved apparent 45% key-variable missing data to 0.8% structural gap via chi-square and Cramer's V (V = 0.859); shipped interactive Quarto HTML reports
+- Applied A/B and quasi-experimental program evaluation on large administrative datasets (chi-square, Cramer's V) as lead methodologist, preventing misattribution of approximately 45,000 records and strengthening data-quality and program investment decisions
 - Directed Medicaid all-payer-claims-database (APCD) linkage for the DOC release cohort (2016–2022): opioid prescribing, coverage, and post-release treatment outcomes in reproducible Quarto notebooks for population-health policy
 - Established division-wide Power BI governance (quality-assurance standards, UX templates, permissions) and Git / Azure DevOps standards (README and CHANGELOG conventions, pull-request review), cutting onboarding time and standardizing delivery quality
 
@@ -29,7 +30,7 @@ May 2023 – Present
 **Research Science Engineer**
 2011 – 2023
 
-- Architected scalable Python magnetoencephalography (MEG) pipelines across a 12-year pediatric speech, reading, and language program; supported $2M+ in NIH, NSF, and foundation-funded academic research with reproducible, standardized neuroimaging data structure-oriented workflows
+- Architected scalable Python and MATLAB magnetoencephalography (MEG) pipelines across a 12-year pediatric speech, reading, and language program (signal space separation, artifact rejection, multi-table integration); supported $2M+ in NIH, NSF, and foundation-funded academic research with reproducible, standardized neuroimaging data structure-oriented workflows
 - Co-developed an open-source Python package for structured data conversion and metadata tooling (reducing data-prep from hours to minutes; CI/CD on Windows, macOS, and Linux); deployed production MEG preprocessing for cohorts from children through adults
 - Validated a combined noise-suppression method (~10 dB reduction in empty-room noise floor; single-trial localization F(1,31) = 32.54, p < 0.001), improving accuracy for dense sensor array MEG parameter guidance
 - Delivered the first MEG source-modeling study of 14-month-olds during word processing: right frontal cortical activity predicted vocabulary growth (beta = 0.51, p = 0.001); longitudinal brain-to-vocabulary correlation r = 0.73 (p = 0.001) at 27 months (N = 22, 5 follow-up assessments)
@@ -41,23 +42,28 @@ May 2023 – Present
 
 - Validated MEG auditory discrimination neuromagnetic component latency as a language-impairment biomarker in autism spectrum disorders: AUC = 0.86, sensitivity 82%, specificity 71%, Cohen's d = 3.11 (~51 ms group delay) in 78 children (51 ASD, 27 controls), with blinded scoring and Bonferroni-corrected contrasts—potential biotechnology diagnostic application
 - Built regulatory-minded analysis practices: a pre-specified bilateral STG source model, blinded brain response scoring, and linear mixed models across 301 observations for unbalanced pediatric repeated measures
-- Characterized lexical oscillatory brain function signatures (theta-alpha desynchronization by hemisphere and lexicality; gamma-band synchronization near the word-uniqueness point) and semantic repetition priming (35% dipole attenuation) via beamforming source localization and time-frequency pipelines
+- Characterized lexical oscillatory brain function signatures (theta-alpha desynchronization by hemisphere and lexicality; gamma-band synchronization near the word-uniqueness point) and semantic repetition priming (35% dipole attenuation) via beamforming source localization and Morlet wavelet time-frequency pipelines
+- Ran a four-condition auditory oddball design across two cohorts (N = 96+) — 5–8× larger than prior work — using repeated-measures ANOVA, Morlet wavelet time-frequency analysis, and beamforming for neural source isolation
 - Delivered a 3-paper MEG program (Biological Psychiatry; NeuroReport, 2011a,b) spanning basic oscillatory neuroscience and translational pediatric diagnostics, under NIH grant R01-DC008871
 
 ## Skills
 
-- **Machine Learning and AI:** scikit-learn, multi-label classification, NLP pipelines, TF-IDF, model validation, ROC/AUC analysis, experiment design, human-in-the-loop (HITL) deployment
-- **Statistics:** linear mixed models, growth-curve modeling, ANOVA, chi-square and Cramer's V association, effect sizes (Cohen's d), spatiotemporal cluster permutation testing, A/B testing
-- **Analytics and BI:** Power BI (semantic models, gateway refresh), SQL and T-SQL, ETL pipelines, SAS-to-SQL migration, Quarto / R Markdown reporting
-- **Programming:** Python (pandas, NumPy, SciPy), R, SQL
+- **Machine Learning and AI:** scikit-learn, MultiOutputClassifier, multi-label classification, NLP pipelines, TF-IDF, k-fold and Jaccard evaluation, model validation, ROC/AUC analysis, experiment design, human-in-the-loop (HITL) deployment
+- **Statistics:** linear mixed models, growth-curve modeling, ANOVA, chi-square and Cramer's V association, effect sizes (Cohen's d), spatiotemporal cluster permutation testing, A/B and quasi-experimental design
+- **Analytics and BI:** Power BI (semantic models, DAX, gateway refresh), Power Automate, SQL / T-SQL / Oracle, ETL pipelines, SAS-to-SQL migration, Quarto / R Markdown reporting
+- **Programming:** Python (pandas, NumPy, SciPy), MATLAB, R, SQL
 - **Geospatial and Networks:** GeoPandas, NetworkX, U.S. Census TIGER/Line data, composite scoring
-- **Neuroimaging and Scientific Python:** MNE-Python, MNE-BIDS, MEG preprocessing, dSPM, boundary-element modeling (BEM), FreeSurfer
+- **Neuroimaging and Scientific Python:** MNE-Python, MNE-BIDS, MEG preprocessing, signal space separation, artifact rejection, Morlet wavelet time-frequency analysis, beamforming, dSPM, boundary-element modeling (BEM), FreeSurfer
 - **Delivery and Infrastructure:** Azure DevOps, Git, Agile product ownership, reproducible research workflows
 
 ## Projects
 
-- **Correctional Incident NLP Classifier** — Production multi-label classifier for 110,928 correctional-facility incident narratives (73 labels); 76% micro-F1, 88% precision, 30x random baseline; scikit-learn TF-IDF with one-vs-rest logistic regression and human-in-the-loop deployment at Washington State DOC
-- **Transport Analytics Pipeline** — Python, GeoPandas, and NetworkX pipeline over 123,291 records across 39 counties; county-cooperation KPI, transport-flow mapping, and structured missing-data audit (Cramer's V = 0.859)
+- **Correctional Incident NLP Classifier (IMRS)** — Production multi-label classifier for 110,928 correctional-facility incident narratives (73 labels, 24-table export); MultiOutputClassifier one-vs-rest logistic regression with TF-IDF (SVM experimentation ~+5 F1); k-fold / Jaccard on 27,700 holdout — 75.6% micro-F1, 88.3% precision, 66.1% recall, 60.8% micro-Jaccard, 60.6% exact match (~30x random baseline); human-in-the-loop deployment at Washington State DOC
+- **Transport Analytics Pipeline** — Python, GeoPandas, and NetworkX pipeline over 123,291 records (10 source tables → 32-field model, 39 counties); county-cooperation KPI, NetworkX flows, automated flagging of 4,107 high-complexity dual-mismatch individuals, Cramer's V missing-data audit (V = 0.859), and interactive Quarto HTML reports
+- **Program Experiment Design & Causal-Style Evaluation** — A/B and quasi-experimental frameworks on large administrative datasets as lead methodologist (DOC); chi-square and Cramer's V to separate artifacts from quality problems; prevented misattribution of approximately 45,000 records
+- **BIOS Enterprise BI, ETL & Reporting Automation** — Program-scale Power BI / SQL ETL (T-SQL, Oracle) with DAX, Power Automate, and gateway automation (~60–70% reporting cycle-time reduction); 63 features across five Agile domains and 20+ dashboards for executive, legislative, and operational stakeholders
+- **Long-Horizon Pediatric Cohort Data Engineering** — 12-year I-LABS MEG program infrastructure: scalable Python and MATLAB pipelines with signal space separation, artifact rejection, and multi-table integration under a $2M+ NIH/NSF portfolio
+- **Auditory Oddball & Cortical Dynamics** — Four-condition auditory oddball across two CHOP cohorts (N = 96+); repeated-measures ANOVA, Morlet wavelet time-frequency analysis, and beamforming; peer-reviewed lexical/spectral-temporal papers (NeuroReport)
 - **Infant MEG Language Predictor** — Longitudinal MEG source imaging with growth-curve models linking infant brain responses to later vocabulary (r = 0.73, p = 0.001); Developmental Cognitive Neuroscience, 2021
 - **Reading-Automaticity MEG Biomarker** — Task-switching brain activation and reading-skill correlation (r = 0.67, p = 1e-6) in school-age children; Brain and Language, 2021
 - **ASD Language-Impairment Auditory Discrimination Biomarker** — ROC-validated MEG latency classifier (AUC = 0.86, Cohen's d = 3.11); Biological Psychiatry, 2011
